@@ -468,5 +468,25 @@
   </footer>
 
   <script src="script.js" defer></script>
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://vmi3509927.contaboserver.net/webhook/018669b3-9e5d-4bff-b647-2c69bef08923/chat',
+      enableStreaming: true,
+    initialMessages: [
+      '¡Hola!',
+    ],
+    
+    i18n: {
+      en: {
+        title: 'Sofi Agente IA',
+        subtitle: '',
+        inputPlaceholder: 'Escribe tu consulta aquí...',
+        closeButtonTooltip: 'Cerrar chat'
+      }
+    }
+    });
+  </script>
 </body>
 </html>
